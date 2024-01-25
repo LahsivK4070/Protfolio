@@ -10,7 +10,7 @@
         align-items: center;
         justify-content: space-between;
         height: 100%;
-
+        
         @include mobile{
             justify-content: flex-end;
             padding: 20px;
@@ -27,7 +27,10 @@
 
         .social{
             display: flex;
+            align-items: center;
+            justify-content: center;
             gap: 20px;
+
 
             img{
                 width: 32px;

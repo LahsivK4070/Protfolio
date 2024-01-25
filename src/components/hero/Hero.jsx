@@ -45,9 +45,9 @@ const floater = {
         y: 0,
     },
     animate: {
-        y: 50,
+        y: 20,
         transition: {
-            duration: 2,
+            duration: 1,
             repeat: Infinity,
             repeatType: "reverse",
             ease: "linear"
