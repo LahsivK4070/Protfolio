@@ -16,9 +16,13 @@
         z-index: 10;
 
         @include mobile{
-            padding-top: calc(100vh - 180px);
             font-size: 24px;
             margin: 10px;
+        }
+
+        @include tablet{
+            font-size: 24px;
+            padding-top: 70px;
         }
 
         .progressBar{
@@ -48,9 +52,14 @@
             justify-content: center;
             gap: 50px;
 
+            @include tablet{
+                margin: 20px;
+            }
+
             @include mobile{
                 gap: 0px;
                 flex-direction: column;
+                margin: 0;
             }
 
             .imageContainer{
@@ -69,6 +78,10 @@
                     object-fit: cover;
                     border-radius: 10px;
 
+                    @include tablet{
+                        object-fit: contain;
+                    }
+
                     @include mobile{
                         object-fit: contain;
                     }
@@ -81,8 +94,15 @@
                 flex-direction: column;
                 gap: 20px;
 
+                @include tablet{
+                    gap: 50px;
+                    text-align: center;
+                    align-items: center;
+                }
+
                 @include mobile{
                     transform: none !important;
+                    gap: 10px;
                     padding: 10px;
                     align-items: center;
                     text-align: center;
@@ -114,6 +134,10 @@
                     width: 200px;
                     cursor: pointer;
                     color: white;
+
+                    @include tablet{
+                        width: 100%;
+                    }
                 }
 
                 .pink-text-gradient {
@@ -187,6 +211,7 @@
                     align-items: center;
                     justify-content: flex-start;
                     gap: 20px;
+                    
                 }
             }
         }

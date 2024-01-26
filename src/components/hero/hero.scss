@@ -9,6 +9,10 @@
     align-items: center;
     justify-content: center;
 
+    @include tablet{
+        flex-direction: column;
+    }
+
     @include mobile{
         flex-direction: column;
     }
@@ -24,6 +28,12 @@
             flex-direction: column;
             justify-content: center;
             gap: 20px;
+
+            @include tablet{
+                height: 50%;
+                align-items: center;
+                text-align: center;
+            }
 
             @include mobile{
                 height: 40%;
@@ -97,6 +107,13 @@
     .imageContainer{
         height: 100%;
         margin: auto;
+
+        @include tablet{
+            height: 50%;
+            position: absolute;
+            top: unset;
+            bottom: 100px;
+        }
 
         @include mobile{
             height: 50%;

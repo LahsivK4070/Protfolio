@@ -8,6 +8,10 @@
     height: 100%;
     top: 100px;
 
+    @include tablet{
+        top: 30px;
+    }
+
     @include mobile{
         height: 100vh;
         top: 50px;
@@ -46,6 +50,10 @@
         margin: auto;
         padding: 0 150px;
 
+        @include tablet{
+            top: -150px;
+        }
+
         @include mobile{
             top: -200px;
         }
@@ -60,6 +68,10 @@
             border-radius: 20px;
             gap: 15px;
 
+            @include tablet{
+                gap: 0;
+            }
+
             @include mobile{
                 gap: 0;
                 min-width: 200px;
@@ -69,6 +81,10 @@
                 font-size: 64px;
                 font-weight: bolder;
                 color: white;
+
+                @include tablet{
+                    font-size: 48px;
+                }
 
                 @include mobile{
                     font-size: 32px;
@@ -89,6 +105,10 @@
                 display: flex;
                 align-items: center;
                 gap: 50px;
+
+                @include tablet{
+                    gap: 70px;
+                }
 
                 @include mobile{
                     justify-content: space-between;

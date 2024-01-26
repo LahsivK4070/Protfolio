@@ -19,6 +19,10 @@
         width: 300px;
         background: rgb(255, 255, 255);
 
+        @include tablet{
+            width: 350px;
+        }
+
         @include mobile{
             width: 200px;
         }

@@ -128,8 +128,6 @@ const Portfolio = () => {
         offset: ["end end", "start start"]
     });
 
-    console.log(scrollYProgress)
-
     const scaleX = useSpring(scrollYProgress, {
         stiffness: 100,
         damping: 30,

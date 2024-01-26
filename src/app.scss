@@ -116,7 +116,6 @@ html{
 body{
     background-color: #0c0c1d;
     color: #d6bcf1;
-
 }
 
 a{
@@ -128,7 +127,6 @@ section{
     height: 100vh;
     scroll-snap-align: center;
     position: relative;
-    top: 10px;
 }
 
 @mixin mobile{
