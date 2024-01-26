@@ -36,7 +36,6 @@ const Links = () => {
     "Education",
     "Projects",
     "Ratings",
-    "Skills",
     "Contact"
   ]
 
